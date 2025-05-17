@@ -30,7 +30,5 @@ namespace CapuchinTemplate
 
             return true;
         }
-
-        public void Update() { } // Simular to BaseUnityPlugin, you can
     }
 }
