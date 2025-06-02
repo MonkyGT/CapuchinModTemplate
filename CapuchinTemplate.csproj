@@ -7,12 +7,6 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Content\**" />
-	  <EmbeddedResource Remove="Content\**" />
-	  <None Remove="Content\**" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<Reference Include="0Harmony">
 		  <HintPath>$(BepInExAssemblyPath)\0Harmony.dll</HintPath>
 		</Reference>
@@ -48,6 +42,9 @@
 		</Reference>
 		<Reference Include="BepInEx.Unity.IL2CPP">
 		  <HintPath>$(BepInExAssemblyPath)\BepInEx.Unity.IL2CPP.dll</HintPath>
+		</Reference>
+		<Reference Include="Caputilla">
+		  <HintPath>$(PluginsPath)\Caputilla\Caputilla.dll</HintPath>
 		</Reference>
 		<Reference Include="Cinemachine">
 		  <HintPath>$(GameAssemblyPath)\Cinemachine.dll</HintPath>

@@ -8,7 +8,7 @@ using BepInEx.Logging;
 
 namespace CapuchinTemplate
 {
-    [BepInPlugin("yourname.modname", "Mod", "1.0.0")]
+    [BepInPlugin(ModInfo.GUID, ModInfo.NAME, ModInfo.VERSION)]
     public class Init : BasePlugin
     {
         public Harmony harmonyInstance;
@@ -20,7 +20,7 @@ namespace CapuchinTemplate
             harmonyInstance = HarmonyPatcher.Patch("yourname.modname");
             initInstance = this;
 
-            pluginInstance = new GameObject().AddComponent<Plugin>();
+            pluginInstance = AddComponent<Plugin>();
         }
 
         public override bool Unload()
