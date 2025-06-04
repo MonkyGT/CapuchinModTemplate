@@ -17,7 +17,7 @@ namespace CapuchinTemplate
 
         public override void Load()
         {
-            harmonyInstance = HarmonyPatcher.Patch("yourname.modname");
+            harmonyInstance = HarmonyPatcher.Patch(ModInfo.GUID);
             initInstance = this;
 
             pluginInstance = AddComponent<Plugin>();
